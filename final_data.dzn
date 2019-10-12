@@ -1,0 +1,46 @@
+number_of_foods = 30; 
+name_of_foods = ["icecream","banana","chocolate cake","apple","chocolate brownie",
+     "cheese cake","mango","doughnuts","chocolate cookies","pudding",
+     "lasagna", "steak","fish and dal","paratha-egg","kachchi biriany",
+     "khichuri","morog polao","grilled chicken-naan","beef curry","chicken fry",
+     "chips","brocolli","beans","baked potatoes","cabbage",
+     "cauliflower","frenchfries","chicken rolls","vegetable rolls","coleslaw"];
+% total energy value for each item     
+energy = [1200,800,2500,600,2000, 2500,700,2200,2700,2200,3000,1800, 1600,1200, 1000,1000, 1000, 1400,1200, 2000, 2000, 700, 1900, 2000, 1500, 1500, 1900, 2000,1500,1200];
+
+%total protein found in each item    
+protein = [50, 120, 400, 100,400,400,120,400,500, 700,200, 800,50, 80, 70, 70, 70,  80, 400,300, 50, 100, 250,30,40, 40, 60, 250, 200,40];
+%total salt value for each item    
+salt = [10,  5, 20, 4,  20, 30, 10, 20, 40,10, 100, 50, 5, 5, 10,10,10, 15,55, 45, 200,10, 60, 50, 10,10, 60, 60, 50,40];
+%total fat found in each item    
+fat = [120, 20, 100,20, 100,120, 80,100, 130,150, 250,100, 20,10,100,200,100, 150,70,150, 200,10, 90,200,40,40,160,100,80,40];
+%total cost for each item    
+cost = [400 , 120, 600, 200 , 600 , 600 , 400 , 600 , 500 , 300 , 450 , 100, 50, 30 , 200 , 100 , 200 , 250, 600 , 500 , 250 , 125, 150 , 200 ,150, 160 ,120 , 200 ,180,150];
+% 7 days in a week 
+day = ["saturday","sunday","monday","tuesday", "wednesday","thursday","friday"];
+% array of three courses
+course = ["breakfast","lunch","dinner"];
+highest_taste=400; % fixed highest taste value
+min_energy = 3300; % minimum fixed energy for each course
+min_protein = 500; % minimum fixed protein for each course
+max_salt = 180;    % maximum fixed salt for each course
+max_fat = 320;     % maximum fixed fat for each course
+desserts = {1,2,3,4,5,6,7,8,9,10};       % these number indicates dessert items
+mains = {11,12,13,14,15,16,17,18,19,20}; % these number indicates main dish
+sides = {21,22,23,24,25,26,27,28,29,30}; % these number indicates side items
+total_student = 10; % total number of students
+
+% the taste value for each food item    
+student_choice= [| 9, 10, 2,  10, 7,  1,  3,  6,  10, 10, 2,  10, 10, 5,  9,  2,  5,  10, 8,  10, 7,  1,  9,  10, 7,  8,  8,  4,                7,  2, | 
+                   2, 7,  5,  8,  8,  10, 9,  4,  7,  2,  1,  8,  6,  5,  10, 7,  7,  9,  9,  6,  2,  3,  9,  1,  5,  2,  10, 8,  6,  5, |
+                   1, 3,  9,  1,  10, 8,  5,  6,  3,  5,  10, 6,  6,  3,  5,  7,  7,  4,  4,  10, 1,  9,  10, 8,  1,  3,  4,  7,  2,  8, |
+                   3, 4,  5,  3,  9,  2,  3,  2,  3,  5,  4,  10, 5,  2,  10, 10, 5,  2,  3,  5,  6,  3,  7,  8,  3,  2,  3,  4,  5,  6, |
+                   6,	3,	8,  2,	7,	2,	4,	7,	8,	1,	10,	8,	5,	5,	5,	4,	6,	6,	9,	8,	7,	4,	9,	6,	4,	10,	9,	6,	7,	6, |
+                   5,	1,	10, 10,	5,	5,	4,	10,	4,	2,	8,	4,	3,	5,	1,	2,	10,	10,	6,	1,	3,	4,	9,	1,	1,	2,	7,	8,	7,	5, |
+                   2,	10,	1,	8,	9,	9,	1,	4,	3,	9,	5,	10,	2,	3,	2,	2,	9,	6,	6,	2,	9,	7,	4,	6,	5,	1,	3,	2,	2,	3, |
+                   1,	1,	6,	8,	10,	2,	6,	5,	1,	4,	2,	8,	4,	6,	2,	7,	3,	7,	7,	8,	5,	1,	3,	10,	2,	9,	6,	10,	1,	5, |
+                   8,	3,	6,	7,	9,	10,	6,	2,	2,	3,	9,	3,	9,	3,	10,	4,	2,	3,	7,	5,	4,	9,	6,	6,	10,	3,	8,	8,	4,	6, |
+                   8,	1,	3,	1,	1,	9,	7,	4,	10,	1,	5,	4,	8,	8,	2,	5,	5,	7,	8,	8,	3,	7,	7,	2,	2,	5,	10,	4,	6,	3, |];
+
+
+budget=1500; % fixed amount of budget
